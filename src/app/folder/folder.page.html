@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="danger">
+     <ion-title>YemekYe</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card *ngFor="let yemek of yemekler;let sira=index" [routerLink]="['/detay',sira]">
+    <img src="{{yemek.resim}}" />
+    <ion-card-header>
+      <ion-card-title>{{yemek.adi}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+     Tarif için tıklayın...
+    </ion-card-content>
+  </ion-card>
+  
+</ion-content>

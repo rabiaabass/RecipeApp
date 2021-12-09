@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>detay</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <img src="{{yemekDetay.resim}}" style="width: 600px;" />
+    <ion-card-header>
+      <ion-card-title>{{yemekDetay.adi}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      TARİF:
+      {{yemekDetay.tarif}}
+    </ion-card-content>
+    <ion-card-content>
+      Malzemeler:
+    </ion-card-content>
+    
+    <!--  Malzemeleri gösteremedim....
+    <ion-list>
+      
+      <ion-item *ngFor=="let yemek of yemekler">
+        <ion-label>
+         {{yemekDetay.malzemeler.adi}}
+        </ion-label>
+      </ion-item>
+      </ion-list>   -->
+    
+
+  </ion-card>
+
+</ion-content>
